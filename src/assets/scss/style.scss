@@ -1,0 +1,284 @@
+/*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import "colorVariables";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "container-grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+header {
+  height: 80px;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+
+  .navbar {
+    .navbar-brand {
+      font-family: "Open Sans", 'sans-serif';
+      color: #1B1C22;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      a.nav-link {
+        color: #938071;
+        font-weight: bold;
+        font-family: "Open Sans", 'sans-serif';
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.landing-page {
+  .hero-wrapper {
+    height: 658px;
+    position: relative;
+  
+    .box {
+      position: absolute;
+      z-index: 3;
+      width: 531px;
+      height: 658px;
+      background-color: #F3EDE9;
+      top: 0;
+      right: 0;
+    }
+  
+    .content-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+  }
+
+}
+
+.hero {
+  margin-top: 80px;
+
+  h2 {
+    font-family: "Open Sans", 'sans-serif';
+    color: #1B1C22;
+    font-weight: bold;
+  }
+
+  span {
+    color: #AFA798;
+  }
+
+  .desc {
+    width: 380px;
+
+    p {
+      color: #1B1C22;
+      font-family: "Open Sans", 'sans-serif';
+    }
+  }
+
+  button {
+    background-color: #F3EDE9;
+    color: #AFA798;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background-color: #f1e5dd;
+      color: #AFA798;
+    }
+  }
+}
+
+.service {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  img {
+    object-fit: cover;
+  }
+
+  h2 {
+    font-family: "Open Sans", 'sans-serif';
+    color: #1B1C22;
+    font-weight: bold;
+  }
+
+  span {
+    color: #AFA798;
+  }
+
+  p {
+    color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
+  }
+
+  button {
+    background-color: #F3EDE9;
+    color: #AFA798;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background-color: #f1e5dd;
+      color: #AFA798;
+    }
+  }
+}
+
+.news-list {
+  margin-top: 50px;
+  h2 {
+    font-family: "Open Sans", 'sans-serif';
+    color: #1B1C22;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .date {
+    color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
+    font-size: 16px;
+  }
+
+  .desc {
+    color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
+    font-size: 18px;
+  }
+
+  .btn {
+    background-color: #F3EDE9;
+    color: #AFA798;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background-color: #f1e5dd;
+      color: #AFA798;
+    }
+  }
+}
+
+.our-apps {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  height: 590px;
+  background-color: #F3EDE9;
+  position: relative;
+  overflow: hidden;
+
+  .kotak {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  h2 {
+    font-family: "Open Sans", 'sans-serif';
+    color: #1B1C22;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+
+  span {
+    color: #AFA798;
+  }
+
+  p {
+    color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
+  }
+
+  .discount {
+    color: white;
+    font-family: "Open Sans", 'sans-serif';
+  }
+}
+
+.footer {
+  margin-bottom: 20px;
+  h5 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
+    font-size: 14px;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
+    margin-bottom: 6px;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.copyright {
+  border-top: 1px solid #F3EDE9;
+  height: 80px;
+  line-height: 80px;
+}
+
+
