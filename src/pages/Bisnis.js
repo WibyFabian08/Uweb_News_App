@@ -16,7 +16,7 @@ const Bisnis = () => {
 
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=id&category=business&apiKey=f2a93cbfe37442bf8fe8a751a4c7ac1c"
+        `${process.env.REACT_APP_API_HOST}/v2/top-headlines?country=id&category=business&apiKey=f2a93cbfe37442bf8fe8a751a4c7ac1c`
       )
       .then((res) => {
         setData(res.data);
