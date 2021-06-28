@@ -5,20 +5,26 @@ import Header from "../parts/Header";
 import Hero from "../parts/Hero";
 import NewsList from "../parts/NewsList";
 import OurApps from "../parts/OurApps";
+import Service from "../parts/Service";
 
 const Teknologi = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
     window.scroll(0, 0);
-    
-    axios.get('https://newsapi.org/v2/top-headlines?country=id&category=technology&apiKey=f2a93cbfe37442bf8fe8a751a4c7ac1c')
-    .then((res) => {
-        setData(res.data)
-    }).catch((err) => {
-        console.log(err)
-    })
-  }, [])
+    document.title = "Tech News";
+
+    axios
+      .get(
+        "https://newsapi.org/v2/top-headlines?country=id&category=technology&apiKey=f2a93cbfe37442bf8fe8a751a4c7ac1c"
+      )
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div className="landing-page">
@@ -29,6 +35,7 @@ const Teknologi = () => {
           <Hero></Hero>
         </div>
       </div>
+      <Service></Service>
       <NewsList data={data} title="Techno News"></NewsList>
       <OurApps></OurApps>
       <Footer></Footer>

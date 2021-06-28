@@ -4,9 +4,9 @@ import { withRouter } from "react-router-dom";
 
 import Fade from "react-reveal/Fade";
 
-const Header = ({match}) => {
+const Header = ({ match }) => {
   function getNavLink(path) {
-    return match.path === path ? 'active' : '' 
+    return match.path === path ? "active" : "";
   }
 
   return (
@@ -17,31 +17,48 @@ const Header = ({match}) => {
             <a href="/" className="navbar-brand">
               UwebNewsApp
             </a>
-
-            <div className="collapse navbar-collapse ">
+            
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                  <a href="/" className={['nav-link', getNavLink('/')].join(' ')}>
+                <li className="nav-item">
+                  <a
+                    href="/"
+                    className={["nav-link", getNavLink("/")].join(" ")}
+                  >
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/sport" className={['nav-link', getNavLink('/sport')].join(' ')}>
+                  <a
+                    href="/sport"
+                    className={["nav-link", getNavLink("/sport")].join(" ")}
+                  >
                     Sports
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/technology" className={['nav-link', getNavLink('/technology')].join(' ')}>
+                  <a
+                    href="/technology"
+                    className={["nav-link", getNavLink("/technology")].join(
+                      " "
+                    )}
+                  >
                     Technology
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/bisnis" className={['nav-link', getNavLink('/bisnis')].join(' ')}>
+                  <a
+                    href="/bisnis"
+                    className={["nav-link", getNavLink("/bisnis")].join(" ")}
+                  >
                     Bussines
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/science" className={['nav-link', getNavLink('/science')].join(' ')}>
+                  <a
+                    href="/science"
+                    className={["nav-link", getNavLink("/science")].join(" ")}
+                  >
                     Science
                   </a>
                 </li>

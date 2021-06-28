@@ -16,16 +16,14 @@ const OurApps = () => {
             and get the bonus
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor rhoncus dolor.
+            Untuk layanan lebih baik anda bisa unduh aplikasi UwebNewsApp, kini tersedia versi aplikasi mobile, anda bisa mengunduh aplikasi melalui PlayStore atau AppStore.
           </p>
           <div className="d-flex">
             <img src={Android} alt="" />
             <img src={Apple} alt="" />
           </div>
         </div>
-        <div className="col-md-5 d-flex justify-content-between align-items-center">
+        <div className="col-md-5 d-flex justify-content-between align-items-center mt-5 mt-md-0">
           <img src={Phone} alt="" />
           <h2 className="discount ml-5">GET 40% OFF FOR EVERY PURCHASE!</h2>
         </div>

@@ -1,28 +1,27 @@
 import React from "react";
-
-import Service1 from "../assets/images/service1.png";
-import Service2 from "../assets/images/service2.png";
-import Service3 from "../assets/images/service3.png";
-
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
+import News1 from "../assets/images/news1.jpg";
+import News2 from "../assets/images/news2.jpg";
+import News3 from "../assets/images/news3.jpg";
 
 const Service = () => {
   return (
     <Fade bottom>
       <div className="container service">
         <div className="row d-flex align-items-center">
-          <div className="col-md-5">
+          <div className="col-md-5 d-none d-md-block">
             <div className="container-grid">
               <div className="row-1">
                 <div className="item column 6">
-                  <img src={Service1} width={222} height={222} alt="" />
+                  <img src={News1} width={222} height={222} alt="" />
                 </div>
                 <div className="item column 6 mt-4">
-                  <img src={Service3} width={222} height={222} alt="" />
+                  <img src={News2} width={222} height={222} alt="" />
                 </div>
               </div>
               <div className="item column 6 row-1">
-                <img src={Service2} width={222} height={469} alt="" />
+                <img src={News3} width={222} height={469} alt="" />
               </div>
               <div className="item column 6 row-1"></div>
             </div>
@@ -38,12 +37,22 @@ const Service = () => {
                 tanpa imbalan ataupun suap dari pihak manapun. Berikut beberapa
                 kategori berita populer :
               </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <button className="btn">Sports</button>
-                <button className="btn">Technology</button>
-                <button className="btn">Healthy</button>
-                <button className="btn">Entertainment</button>
-                <button className="btn">Science</button>
+              <div className="row d-flex justify-content-between align-items-center flex-wrap">
+                <Link to="/" className="btn mt-3 mt-md-0">
+                  Headline
+                </Link>
+                <Link to="/sport" className="btn mt-3 mt-md-0">
+                  Sports
+                </Link>
+                <Link to="/technology" className="btn mt-3 mt-md-0">
+                  Technology
+                </Link>
+                <Link to="/bisnis" className="btn mt-3 mt-md-0">
+                  Bussines
+                </Link>
+                <Link to="/science" className="btn mt-3 mt-md-0">
+                  Science
+                </Link>
               </div>
             </div>
           </Fade>
