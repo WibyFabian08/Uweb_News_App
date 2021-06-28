@@ -241,26 +241,33 @@ header {
     top: 0;
   }
 
-  h2 {
-    font-family: "Open Sans", 'sans-serif';
-    color: #1B1C22;
-    font-weight: bold;
-    margin-bottom: 32px;
+  .container {
+    position: relative;
+    z-index: 10;
+
+    h2 {
+      font-family: "Open Sans", 'sans-serif';
+      color: #1B1C22;
+      font-weight: bold;
+      margin-bottom: 32px;
+    }
+  
+    span {
+      color: #AFA798;
+    }
+  
+    p {
+      color: #1B1C22;
+      font-family: "Open Sans", 'sans-serif';
+    }
+  
+    .discount {
+      color: white;
+      font-family: "Open Sans", 'sans-serif';
+    }
+
   }
 
-  span {
-    color: #AFA798;
-  }
-
-  p {
-    color: #1B1C22;
-    font-family: "Open Sans", 'sans-serif';
-  }
-
-  .discount {
-    color: white;
-    font-family: "Open Sans", 'sans-serif';
-  }
 }
 
 .footer {
@@ -277,6 +284,7 @@ header {
   h5 {
     margin-bottom: 15px;
     color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
   }
 
   p {
@@ -288,6 +296,7 @@ header {
   h4 {
     margin-bottom: 15px;
     color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
   }
   a {
     text-decoration: none;
@@ -306,6 +315,18 @@ header {
   border-top: 1px solid #F3EDE9;
   height: 80px;
   line-height: 80px;
+}
+
+.covid {
+  h2 {
+    margin-bottom: 15px;
+    color: #1B1C22;
+    font-family: "Open Sans", 'sans-serif';
+    font-weight: bold;
+  }
+
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 

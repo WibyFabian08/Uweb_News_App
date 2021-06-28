@@ -12,11 +12,13 @@ const OurApps = () => {
       <div className="container row d-flex align-items-center w-100">
         <div className="col-md-7 d-flex flex-column">
           <h2 className="mb-4">
-            <span>Download</span> furniture order app <br />
+            <span>Download</span> UwebNewsApps <br />
             and get the bonus
           </h2>
           <p>
-            Untuk layanan lebih baik anda bisa unduh aplikasi UwebNewsApp, kini tersedia versi aplikasi mobile, anda bisa mengunduh aplikasi melalui PlayStore atau AppStore.
+            Untuk layanan lebih baik anda bisa unduh aplikasi UwebNewsApp, kini
+            tersedia versi aplikasi mobile, anda bisa mengunduh aplikasi melalui
+            PlayStore atau AppStore.
           </p>
           <div className="d-flex">
             <img src={Android} alt="" />

@@ -6,6 +6,7 @@ import Service from "../parts/Service";
 import NewsList from "../parts/NewsList";
 import OurApps from "../parts/OurApps";
 import Footer from "../parts/Footer";
+import Covid from "../parts/Covid";
 import { useEffect } from "react";
 
 import axios from "axios";
@@ -41,6 +42,7 @@ const LandingPage = () => {
       <Service></Service>
       <NewsList data={data} title="Headline News"></NewsList>
       <OurApps></OurApps>
+      <Covid></Covid>
       <Footer></Footer>
     </div>
   );
