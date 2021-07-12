@@ -6,6 +6,8 @@ import GitHub from "../assets/icons/github.png";
 import IG from "../assets/icons/ig.svg";
 import Arrow from "../assets/images/arrow-top.png";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   function top() {
     window.scrollTo({
@@ -38,18 +40,18 @@ const Footer = () => {
             <Fade bottom delay={1000}>
               <div className="col-md-2 d-flex flex-column mt-3 mt-md-0">
                 <h5>Support</h5>
-                <a href="/">Privacy & Policy</a>
-                <a href="/">Terms & Conditions</a>
-                <a href="/">Support & System</a>
+                <Link to="/">Privacy & Policy</Link>
+                <Link to="/">Terms & Conditions</Link>
+                <Link to="/">Support & System</Link>
               </div>
             </Fade>
             <Fade bottom delay={1500}>
               <div className="col-md-2 d-flex flex-column mt-3 mt-md-0">
                 <h5>Our Services</h5>
-                <a href="/sport">Sports</a>
-                <a href="/technology">Technology</a>
-                <a href="/bisnis">Bussines</a>
-                <a href="/science">Science</a>
+                <Link to="/sport">Sports</Link>
+                <Link to="/technology">Technology</Link>
+                <Link to="/bisnis">Bussines</Link>
+                <Link to="/science">Science</Link>
               </div>
             </Fade>
             <Fade bottom delay={2000}>
@@ -77,9 +79,9 @@ const Footer = () => {
                   >
                     <img src={GitHub} width={25} alt="" />
                   </a>
-                  <a href="/">
+                  <Link to="/">
                     <img src={Email} width={25} alt="" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Fade>

@@ -4,7 +4,7 @@ import News from "../assets/images/news.jpg";
 
 const Hero = () => {
   return (
-    <div className="container hero">
+    <section className="container hero">
       <div className="row d-flex align-items-center">
         <Fade bottom delay={500}>
           <div className="col-12 col-md-5">
@@ -19,17 +19,17 @@ const Hero = () => {
                 macam berita mulai dri berita Olahraga, Bisnis, Ekonomi,
                 Teknologi, Kesehatan, Sains dll.
               </p>
-              {/* <button className="btn">See More </button> */}
+              <button className="btn">See More </button>
             </div>
           </div>
         </Fade>
         <Fade bottom delay={1000}>
-          <div className="col-12 col-md-7">
+          <div className="col-7 d-none d-md-block">
             <img src={News} className="w-100"  alt="" />
           </div>
         </Fade>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -19,6 +19,7 @@ const Science = () => {
         `${process.env.REACT_APP_API_HOST}/v2/top-headlines?country=id&category=science&apiKey=f2a93cbfe37442bf8fe8a751a4c7ac1c`
       )
       .then((res) => {
+        
         setData(res.data);
       })
       .catch((err) => {

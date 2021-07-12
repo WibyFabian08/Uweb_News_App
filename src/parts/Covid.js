@@ -5,10 +5,12 @@ import axios from 'axios'
 
 const Covid = () => {
     const [data, setData] = useState(null)
+
     useEffect(() => {
         axios
-          .get(`${process.env.REACT_APP_COVID}/api`)
+          .get(`https://covid.mathdro.id/api`)
           .then((res) => {
+            // console.log(res);
             setData(res.data)
           })
           .catch((err) => {
