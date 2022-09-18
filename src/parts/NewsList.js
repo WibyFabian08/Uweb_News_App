@@ -14,7 +14,7 @@ const NewsList = ({ data, title }) => {
                 key={index}
               >
                 <div className="w-100 image-wrapper">
-                  <img src={data?.urlToImage} className="w-100" alt="News" />
+                  <img src={data?.urlToImage} className="w-100 h-100" alt="News" />
                 </div>
                 <p className="date mt-4">
                   {formatDate(data.publishedAt)} - {data.author || "author"}

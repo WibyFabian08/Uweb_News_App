@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="row d-flex align-items-center">
         <Fade bottom delay={500}>
           <div className="col-12 col-md-5">
-            <h2 className="mb-4">
+            <h2 className="mb-4 mr-md-0">
               Penuhi hari <span>anda</span> dirumah <br />
               <span>dengan</span> berita terbaru
             </h2>
